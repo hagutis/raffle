@@ -52,11 +52,9 @@ def cloud(kids):
 
 
 def main():
-    st.write("# Text Summarization with a WordCloud")
     kids=['Christoff','Cedrick','Chaskell','Jasmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
     cloud(kids)
-                
-                
+                            
 
 if __name__=="__main__":
   main()
