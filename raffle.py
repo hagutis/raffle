@@ -44,7 +44,7 @@ def main():
     st.write("# Text Summarization with a WordCloud")
     kids=['Christoff','Cedrick','Chaskell','Jasmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
     if st.button("START"):
-        while len(kids)>2:
+        while len(kids)>1:
             random.shuffle(kids)
             text = ','.join(kids)
             st.write(cloud(text), use_column_width=True)
