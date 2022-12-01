@@ -38,8 +38,9 @@ def cloud(text):
 
     for ax in axes:
         ax.set_axis_off()
-    with st.empty():
-        st.pyplot(fig, clear_figure=True)
+    placeholder=st.empty()
+    placeholder.pyplot(fig, clear_figure=True)
+    placeholder.empty()
 
 
 def main():
