@@ -40,7 +40,8 @@ def cloud(text):
 
 def main():
     st.write("# Text Summarization with a WordCloud")
-    text = 'fpj, lito'
+    kids=['Christoff','Cedrick','Chaskell','Jasmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
+    text = ','.join(kids)
     if text is not None:
         if st.button("Plot"):
             st.write("### Original image")
