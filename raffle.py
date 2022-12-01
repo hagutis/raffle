@@ -48,7 +48,7 @@ def main():
             random.shuffle(kids)
             text = ','.join(kids)
             st.write(cloud(text), use_column_width=True)
-            kids=kids.pop()
+            kids.pop()
             time.sleep(0.5)
                 
                 
