@@ -50,7 +50,7 @@ def main():
             while len(kids)>2:
                 st.write(cloud(text), use_column_width=True)
                 random.shuffle(kids)
-                kids.pop()
+                kids=kids.pop()
                 time.sleep(0.5)
                 
                 
