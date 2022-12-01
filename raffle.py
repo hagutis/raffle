@@ -44,10 +44,10 @@ def cloud(kids):
 
             for ax in axes:
                 ax.set_axis_off()
-            placeholder=st.empty()
-            placeholder.pyplot(fig, clear_figure=True)
+            #placeholder=st.empty()
+            st.pyplot(fig, clear_figure=True)
             time.sleep(0.5)
-            placeholder.empty()
+            #placeholder.empty()
 
 
 def main():
