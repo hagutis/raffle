@@ -43,15 +43,13 @@ def cloud(text):
 def main():
     st.write("# Text Summarization with a WordCloud")
     kids=['Christoff','Cedrick','Chaskell','Jasmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
-    random.shuffle(kids)
-    text = ','.join(kids)
-    if text is not None:
-        if st.button("START"):
-            while len(kids)>2:
-                st.write(cloud(text), use_column_width=True)
-                random.shuffle(kids)
-                kids=kids.pop()
-                time.sleep(0.5)
+    if st.button("START"):
+        while len(kids)>2:
+            random.shuffle(kids)
+            text = ','.join(kids)
+            st.write(cloud(text), use_column_width=True)
+            kids=kids.pop()
+            time.sleep(0.5)
                 
                 
 
