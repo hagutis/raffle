@@ -38,8 +38,9 @@ def cloud(text):
 
     for ax in axes:
         ax.set_axis_off()
-    st.pyplot(fig, clear_figure=True)
-    plt.close()
+    with st.empty():
+        st.pyplot(fig, clear_figure=True)
+
 
 def main():
     st.write("# Text Summarization with a WordCloud")
