@@ -40,7 +40,7 @@ def cloud(text):
 
 def main():
     st.write("# Text Summarization with a WordCloud")
-    text = st.te
+    text = ['fpj','lito']
     if text is not None:
         if st.button("Plot"):
             st.write("### Original image")
