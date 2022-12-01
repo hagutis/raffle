@@ -47,7 +47,7 @@ def main():
     text = ','.join(kids)
     if text is not None:
         if st.button("START"):
-            do while len(kids)>2:
+            while len(kids)>2:
                 st.write(cloud(text), use_column_width=True)
                 random.shuffle(kids)
                 kids.pop()
