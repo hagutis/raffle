@@ -8,8 +8,8 @@ if "visibility" not in st.session_state:
     st.session_state.visibility = "visible"
     st.session_state.disabled = False
 
-st.title('🎁Wishlist 2022')
-st.subheader('For gift ideas...')
+st.title('🎁RAFFLE')
+
 add_selectbox = st.sidebar.text('Powered by: MPoint Analytics LLC.\n© Copyright 2022')
 st.markdown('---')
 
