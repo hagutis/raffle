@@ -25,7 +25,7 @@ def cloud(kids):
             text = ','.join(kids)
             kids.pop()
     
-            wc = WordCloud(background_color="white", colormap="hot",
+            wc = WordCloud(background_color="white", colormap="viridis",
             max_font_size=300, random_state=42)
 
             # generate word cloud
