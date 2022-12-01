@@ -40,6 +40,7 @@ def cloud(text):
         ax.set_axis_off()
     placeholder=st.empty()
     placeholder.pyplot(fig, clear_figure=True)
+    time.sleep(0.5)
     placeholder.empty()
 
 
@@ -52,7 +53,6 @@ def main():
             text = ','.join(kids)
             st.write(cloud(text), use_column_width=True)
             kids.pop()
-            time.sleep(0.5)
                 
                 
 
