@@ -22,7 +22,7 @@ def cloud(text, max_word, max_font, random):
     'put', 'seem', 'asked', 'made', 'half', 'much',
     'certainly', 'might', 'came'])
     
-    wc = WordCloud(background_color="white", colormap="hot", max_words=max_word,
+    wc = WordCloud(background_color="black", colormap="hot", max_words=max_word,
     stopwords=stopwords, max_font_size=max_font, random_state=random)
 
     # generate word cloud
@@ -41,7 +41,7 @@ def cloud(text, max_word, max_font, random):
 
     for ax in axes:
         ax.set_axis_off()
-    st.pyplot()
+    st.pyplot(fig)
 
 def main():
     st.write("# Text Summarization with a WordCloud")
