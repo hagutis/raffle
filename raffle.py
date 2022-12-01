@@ -18,7 +18,7 @@ add_selectbox = st.sidebar.text('Powered by: MPoint Analytics LLC.\n© Copyright
 def cloud(text):
     
     wc = WordCloud(background_color="white", colormap="hot",
-    max_font_size=100, random_state=42)
+    max_font_size=300, random_state=42)
 
     # generate word cloud
     wc.generate(text)
@@ -43,9 +43,7 @@ def main():
     kids=['Christoff','Cedrick','Chaskell','Jasmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
     text = ','.join(kids)
     if text is not None:
-        if st.button("Plot"):
-            st.write("### Original image")
-            st.write("### Word cloud")
+        if st.button("START"):
             st.write(cloud(text), use_column_width=True)
 
 if __name__=="__main__":
