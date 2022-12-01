@@ -25,7 +25,7 @@ def cloud(kids):
             text = ','.join(kids)
             kids.pop()
     
-            wc = WordCloud(background_color="white", colormap="viridis",
+            wc = WordCloud(background_color="white", colormap="paired",
             max_font_size=300, random_state=42)
 
             # generate word cloud
@@ -46,7 +46,7 @@ def cloud(kids):
                 ax.set_axis_off()
             placeholder=st.empty()
             placeholder.pyplot(fig)
-            time.sleep(0.75)
+            time.sleep(1)
             placeholder.empty()
         placeholder.pyplot(fig)
 
