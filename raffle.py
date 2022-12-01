@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 import snowflake.connector
 from urllib.error import URLError
-from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+from wordcloud import WordCloud, ImageColorGenerator
 
 
 if "visibility" not in st.session_state:
@@ -16,14 +16,9 @@ st.title('🎁RAFFLE')
 add_selectbox = st.sidebar.text('Powered by: MPoint Analytics LLC.\n© Copyright 2022')
 
 def cloud(text, max_word, max_font, random):
-    stopwords = set(STOPWORDS)
-    stopwords.update(['us', 'one', 'will', 'said', 'now', 'well', 'man', 'may',
-    'little', 'say', 'must', 'way', 'long', 'yet', 'mean',
-    'put', 'seem', 'asked', 'made', 'half', 'much',
-    'certainly', 'might', 'came'])
     
-    wc = WordCloud(background_color="black", colormap="hot", max_words=max_word,
-    stopwords=stopwords, max_font_size=max_font, random_state=random)
+    wc = WordCloud(background_color="white", colormap="hot",
+    max_font_size=100, random_state=42)
 
     # generate word cloud
     wc.generate(text)
