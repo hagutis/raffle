@@ -6,13 +6,14 @@ import snowflake.connector
 from urllib.error import URLError
 from wordcloud import WordCloud, ImageColorGenerator
 import random
+import time
 
 
 if "visibility" not in st.session_state:
     st.session_state.visibility = "visible"
     st.session_state.disabled = False
 
-st.title('🎁RAFFLE')
+st.title('🎰 RAFFLE 🧧')
 
 add_selectbox = st.sidebar.text('Powered by: MPoint Analytics LLC.\n© Copyright 2022')
 
@@ -46,7 +47,13 @@ def main():
     text = ','.join(kids)
     if text is not None:
         if st.button("START"):
-            st.write(cloud(text), use_column_width=True)
+            do while len(kids)>2:
+                st.write(cloud(text), use_column_width=True)
+                random.shuffle(kids)
+                kids.pop()
+                time.sleep(0.5)
+                
+                
 
 if __name__=="__main__":
   main()
