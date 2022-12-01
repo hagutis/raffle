@@ -5,6 +5,7 @@ import streamlit as st
 import snowflake.connector
 from urllib.error import URLError
 from wordcloud import WordCloud, ImageColorGenerator
+import random
 
 
 if "visibility" not in st.session_state:
@@ -41,6 +42,7 @@ def cloud(text):
 def main():
     st.write("# Text Summarization with a WordCloud")
     kids=['Christoff','Cedrick','Chaskell','Jasmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
+    random.shuffle(kids)
     text = ','.join(kids)
     if text is not None:
         if st.button("START"):
