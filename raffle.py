@@ -15,7 +15,7 @@ st.title('🎁RAFFLE')
 
 add_selectbox = st.sidebar.text('Powered by: MPoint Analytics LLC.\n© Copyright 2022')
 
-def cloud(text, max_word, max_font, random):
+def cloud(text):
     
     wc = WordCloud(background_color="white", colormap="hot",
     max_font_size=100, random_state=42)
@@ -27,7 +27,7 @@ def cloud(text, max_word, max_font, random):
     #image_colors = ImageColorGenerator(image)
 
     # show the figure
-    plt.figure(figsize=(100,100))
+    plt.figure(figsize=(100,150))
     fig, axes = plt.subplots(1,2, gridspec_kw={'width_ratios': [3, 2]})
     axes[0].imshow(wc, interpolation="bilinear")
     # recolor wordcloud and show
@@ -40,15 +40,12 @@ def cloud(text, max_word, max_font, random):
 
 def main():
     st.write("# Text Summarization with a WordCloud")
-    max_word = st.sidebar.slider("Max words", 200, 3000, 200)
-    max_font = st.sidebar.slider("Max Font Size", 50, 350, 60)
-    random = st.sidebar.slider("Random State", 30, 100, 42 )
-    text = st.text_area("Add text ..")
+    text = st.te
     if text is not None:
         if st.button("Plot"):
             st.write("### Original image")
             st.write("### Word cloud")
-            st.write(cloud(text, max_word, max_font, random), use_column_width=True)
+            st.write(cloud(text), use_column_width=True)
 
 if __name__=="__main__":
   main()
