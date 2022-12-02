@@ -49,6 +49,7 @@ def cloud(kids):
             placeholder.empty()
             winner=kids[0]
             kids.pop()
+            st.write(st.session_state)
         placeholder.pyplot(fig)
         
 
