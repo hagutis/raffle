@@ -19,10 +19,10 @@ add_selectbox = st.sidebar.text('Powered by: MPoint Analytics LLC.\n© Copyright
 
 def cloud(kids):
     if st.button("START"):
-        while len(kids)>1:
+        while len(kids)>0:
             random.shuffle(kids)
             text = ','.join(kids)
-            kids.pop()
+            
     
             wc = WordCloud(background_color="white", colormap="magma",
             max_font_size=300, random_state=42)
@@ -47,7 +47,10 @@ def cloud(kids):
             placeholder.pyplot(fig)
             time.sleep(1)
             placeholder.empty()
+            winner=kids[0]
+            kids.pop()
         placeholder.pyplot(fig)
+        
 
 
 def main():
