@@ -18,7 +18,6 @@ st.title('🎰 RAFFLE 🧧')
 add_selectbox = st.sidebar.text('Powered by: MPoint Analytics LLC.\n© Copyright 2022')
 
 def cloud(kids):
-    placeholder=st.empty()
     if st.button("START"):
         while len(kids)>1:
             random.shuffle(kids)
@@ -44,7 +43,7 @@ def cloud(kids):
 
             for ax in axes:
                 ax.set_axis_off()
-            
+            placeholder=st.empty()
             placeholder.pyplot(fig)
             time.sleep(1)
             placeholder.empty()
