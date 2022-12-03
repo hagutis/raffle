@@ -14,8 +14,9 @@ st.title('🎰 RAFFLE 🧧')
 add_selectbox = st.sidebar.text('Powered by: MPoint Analytics LLC.\n© Copyright 2022')
 
 def cloud(kids):
-    random.shuffle(kids)
-    text = ','.join(kids)
+    temp_kids=[x for x in kids]
+    random.shuffle(temp_kids)
+    text = ','.join(temp_kids)
     wc = WordCloud(background_color="white", colormap="magma",
     max_font_size=300, random_state=42)
 
@@ -41,9 +42,9 @@ def cloud(kids):
     
     if st.button("START"):
         placeholder.empty()
-        while len(kids)>0:
-            random.shuffle(kids)
-            text = ','.join(kids)
+        while len(temp_kids)>0:
+            random.shuffle(temp_kids)
+            text = ','.join(temp_kids)
             wc = WordCloud(background_color="white", colormap="magma",
             max_font_size=300, random_state=42)
 
@@ -67,15 +68,16 @@ def cloud(kids):
             placeholder.pyplot(fig)
             time.sleep(1)
             placeholder.empty()
-            winner=kids[0]
+            winner=temp_kids[0]
             kids.pop()
         placeholder.pyplot(fig)
+        temp_kids.remove(winner)
         
 
 
 def main():
-    kids=['Christoff','Cedrick','Chaskell','Jazmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
-    cloud(kids)
+    orig_kids=['Christoff','Cedrick','Chaskell','Jazmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
+    cloud(orig_kids)
                             
 
 if __name__=="__main__":
