@@ -17,6 +17,8 @@ def cloud(kids):
     temp_kids=[x for x in kids]
     random.shuffle(temp_kids)
     text = ','.join(temp_kids)
+    colormap='magma'
+    colormap='binary'
     wc = WordCloud(background_color="white", colormap="magma",
     max_font_size=300, random_state=42)
 
