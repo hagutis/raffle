@@ -23,7 +23,6 @@ def cloud(kids):
             random.shuffle(kids)
             text = ','.join(kids)
             placeholder=st.empty()
-            pyplot.close()
             wc = WordCloud(background_color="white", colormap="magma",
             max_font_size=300, random_state=42)
 
