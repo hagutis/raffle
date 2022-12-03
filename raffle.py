@@ -63,9 +63,6 @@ def cloud(kids):
             #fig, axes = plt.subplots(1,2, gridspec_kw={'width_ratios': [5, 4]})
             fig, ax = plt.subplots(figsize = (12, 6))
             ax.imshow(wc, interpolation="bilinear")
-            # recolor wordcloud and show
-            # we could also give color_func=image_colors directly in the constructor
-            #axes[1].imshow(image, cmap=plt.cm.gray, interpolation="bilinear")
 
             #for ax in axes:
             ax.set_axis_off()
