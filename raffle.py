@@ -39,7 +39,11 @@ def cloud(kids):
     for ax in axes:
         ax.set_axis_off()
     placeholder=st.empty()
-    placeholder.pyplot(fig)
+    #placeholder.pyplot(fig)
+    
+    buf = BytesIO()
+    fig.savefig(buf, format="png")
+    placeholder.image(buf)
     
     
     if st.button("START"):
