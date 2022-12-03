@@ -72,6 +72,8 @@ def cloud(kids):
             #placeholder=st.empty()
             placeholder.pyplot(fig)
             time.sleep(0.5)
+            pyplot.cla()
+            time.sleep(0.5)
             placeholder.empty()
             winner=temp_kids[0]
             temp_kids.pop()
