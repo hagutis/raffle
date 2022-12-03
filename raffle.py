@@ -20,7 +20,7 @@ def cloud(kids):
     colormap='magma'
     colormap='winter'
     wc = WordCloud(background_color="white", colormap=colormap,
-    max_font_size=300, random_state=42, width=400,
+    max_font_size=100, random_state=42, width=400,
     height=200)
 
     # generate word cloud
@@ -30,7 +30,7 @@ def cloud(kids):
     #image_colors = ImageColorGenerator(image)
 
     # show the figure
-    plt.figure(figsize=(0.2,0.1))
+    plt.figure(figsize=(400,200))
     fig, axes = plt.subplots(1,2, gridspec_kw={'width_ratios': [5, 4]})
     axes[0].imshow(wc, interpolation="bilinear")
     # recolor wordcloud and show
