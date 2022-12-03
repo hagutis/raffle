@@ -80,7 +80,8 @@ def cloud(kids):
 
 
 def main():
-    orig_kids=['Christoff','Cedrick','Chaskell','Jazmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
+    #orig_kids=['Christoff','Cedrick','Chaskell','Jazmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
+    orig_kids=['Aaron','Abbey','Abby','Aedan','Amielle','Angel','Annika','Ardene','Arianne','Ava','Cedrick','Chaskell','Christoff','Edmund','Jasen','Jasmine','Luigi','Matt','Nathan','Niall','Rayden','Rye','Shiloh','TJ']
     cloud(orig_kids)
                             
 
