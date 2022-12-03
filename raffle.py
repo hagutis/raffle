@@ -31,7 +31,7 @@ def cloud(kids):
     # show the figure
     #plt.figure(figsize=(10,5))
     #fig, axes = plt.subplots(1,2, gridspec_kw={'width_ratios': [5, 4]})
-    fig, ax = plt.subplots(figsize = (20, 10))
+    fig, ax = plt.subplots(figsize = (30, 15))
     ax.imshow(wc, interpolation="bilinear")
     # recolor wordcloud and show
     # we could also give color_func=image_colors directly in the constructor
