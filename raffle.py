@@ -20,7 +20,7 @@ def cloud(kids):
     colormap='magma'
     colormap='winter'
     wc = WordCloud(background_color="white", colormap=colormap,
-    max_font_size=100, random_state=42, width=400, height=200)
+    max_font_size=100, random_state=42, width=800, height=400)
 
     # generate word cloud
     wc.generate(text)
