@@ -22,8 +22,8 @@ def cloud(kids):
         while len(kids)>0:
             random.shuffle(kids)
             text = ','.join(kids)
-            
-    
+            placeholder=st.empty()
+            pyplot.close()
             wc = WordCloud(background_color="white", colormap="magma",
             max_font_size=300, random_state=42)
 
@@ -43,13 +43,12 @@ def cloud(kids):
 
             for ax in axes:
                 ax.set_axis_off()
-            placeholder=st.empty()
+            
             placeholder.pyplot(fig)
             time.sleep(1)
             placeholder.empty()
             winner=kids[0]
             kids.pop()
-            st.write(st.session_state.key)
         placeholder.pyplot(fig)
         
 
