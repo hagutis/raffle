@@ -41,6 +41,7 @@ def cloud(kids):
     
     
     if st.button("START"):
+        temp_kids=[x for x in kids]
         placeholder.empty()
         while len(temp_kids)>0:
             random.shuffle(temp_kids)
@@ -71,7 +72,7 @@ def cloud(kids):
             winner=temp_kids[0]
             temp_kids.pop()
         placeholder.pyplot(fig)
-        temp_kids.remove(winner)
+        kids.remove(winner)
         
 
 
