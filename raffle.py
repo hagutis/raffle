@@ -37,9 +37,10 @@ def cloud(kids):
         ax.set_axis_off()
     placeholder=st.empty()
     placeholder.pyplot(fig)
-    placeholder.empty()
+    
     
     if st.button("START"):
+        placeholder.empty()
         while len(kids)>0:
             random.shuffle(kids)
             text = ','.join(kids)
