@@ -72,7 +72,9 @@ def cloud(kids):
             winner=temp_kids[0]
             temp_kids.pop()
         placeholder.pyplot(fig)
+        st.write(winner)
         kids.remove(winner)
+        st.write(kids)
         
 
 
