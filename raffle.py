@@ -20,8 +20,7 @@ def cloud(kids):
     colormap='magma'
     colormap='winter'
     wc = WordCloud(background_color="white", colormap=colormap,
-    max_font_size=100, random_state=42, width=400,
-    height=200)
+    max_font_size=100, random_state=42, width=400, height=200)
 
     # generate word cloud
     wc.generate(text)
@@ -40,11 +39,11 @@ def cloud(kids):
     for ax in axes:
         ax.set_axis_off()
     placeholder=st.empty()
-    #placeholder.pyplot(fig)
+    placeholder.pyplot(fig)
     
-    buf = BytesIO()
-    fig.savefig(buf, format="png")
-    placeholder.image(buf)
+    #buf = BytesIO()
+    #fig.savefig(buf, format="png")
+    #placeholder.image(buf)
     
     
     if st.button("START"):
