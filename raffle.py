@@ -19,7 +19,7 @@ def cloud(kids):
     text = ','.join(temp_kids)
     colormap='magma'
     colormap='winter'
-    wc = WordCloud(background_color="white", colormap=colormap,mask=None,
+    wc = WordCloud(background_color="red", colormap=colormap,
     max_font_size=100, random_state=42, width=800, height=400)
 
     # generate word cloud
@@ -50,7 +50,7 @@ def cloud(kids):
             colormap='magma'
             colormap='winter'
             wc = WordCloud(background_color="white", colormap=colormap,
-            max_font_size=300, random_state=42,width=800, height=400)
+            max_font_size=100, random_state=42,width=800, height=400)
 
             # generate word cloud
             wc.generate(text)
