@@ -20,7 +20,7 @@ def cloud(kids):
     colormap='magma'
     colormap='winter'
     wc = WordCloud(background_color="white", colormap=colormap,mask=None,
-    max_font_size=100, random_state=42, width=1000, height=500)
+    max_font_size=100, random_state=42, width=800, height=400)
 
     # generate word cloud
     wc.generate(text)
@@ -31,20 +31,13 @@ def cloud(kids):
     # show the figure
     #plt.figure(figsize=(10,5))
     #fig, axes = plt.subplots(1,2, gridspec_kw={'width_ratios': [5, 4]})
-    fig, ax = plt.subplots(figsize = (18, 9))
+    fig, ax = plt.subplots(figsize = (12, 6))
     ax.imshow(wc, interpolation="bilinear")
-    # recolor wordcloud and show
-    # we could also give color_func=image_colors directly in the constructor
-    #axes[1].imshow(image, cmap=plt.cm.gray, interpolation="bilinear")
 
     #for ax in axes:
     ax.set_axis_off()
     placeholder=st.empty()
-    #placeholder.pyplot(fig)
-    
-    buf = BytesIO()
-    fig.savefig(buf, format="png")
-    placeholder.image(buf)
+    placeholder.pyplot(fig)
     
     
     if st.button("START"):
@@ -55,9 +48,9 @@ def cloud(kids):
             random.shuffle(temp_kids)
             text = ','.join(temp_kids)
             colormap='magma'
-            colormap='binary'
+            colormap='jet'
             wc = WordCloud(background_color="white", colormap=colormap,
-            max_font_size=300, random_state=42)
+            max_font_size=300, random_state=42,width=800, height=400)
 
             # generate word cloud
             wc.generate(text)
@@ -66,15 +59,16 @@ def cloud(kids):
             #image_colors = ImageColorGenerator(image)
 
             # show the figure
-            plt.figure(figsize=(50,50))
-            fig, axes = plt.subplots(1,2, gridspec_kw={'width_ratios': [5, 4]})
-            axes[0].imshow(wc, interpolation="bilinear")
+            #plt.figure(figsize=(12,6))
+            #fig, axes = plt.subplots(1,2, gridspec_kw={'width_ratios': [5, 4]})
+            fig, ax = plt.subplots(figsize = (12, 6))
+            ax.imshow(wc, interpolation="bilinear")
             # recolor wordcloud and show
             # we could also give color_func=image_colors directly in the constructor
             #axes[1].imshow(image, cmap=plt.cm.gray, interpolation="bilinear")
 
-            for ax in axes:
-                ax.set_axis_off()
+            #for ax in axes:
+            ax.set_axis_off()
             #placeholder=st.empty()
             placeholder.pyplot(fig)
             time.sleep(1)
