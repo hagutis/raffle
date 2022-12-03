@@ -49,13 +49,13 @@ def cloud(kids):
             placeholder.empty()
             winner=kids[0]
             kids.pop()
-            st.write(st.session_state)
+            st.write(st.session_state.key)
         placeholder.pyplot(fig)
         
 
 
 def main():
-    kids=['Christoff','Cedrick','Chaskell','Jasmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
+    kids=['Christoff','Cedrick','Chaskell','Jazmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
     cloud(kids)
                             
 
