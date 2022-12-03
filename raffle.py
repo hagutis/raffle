@@ -71,10 +71,11 @@ def cloud(kids):
             ax.set_axis_off()
             #placeholder=st.empty()
             placeholder.pyplot(fig)
-            time.sleep(1)
+            time.sleep(0.5)
             placeholder.empty()
             winner=temp_kids[0]
             temp_kids.pop()
+        st.snow()
         placeholder.pyplot(fig)
         #st.write(winner)
         #kids.remove(winner)
