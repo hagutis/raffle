@@ -83,7 +83,7 @@ def main():
     #orig_kids=['Christoff','Cedrick','Chaskell','Jazmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
     orig_kids=['Aaron','Abbey','Abby','Aedan','Amielle','Angel','Annika','Ardene','Arianne','Ava','Cedrick','Chaskell','Christoff','Edmund','Izzy','Jasen','Jasmine','Luigi','Matt','Nathan','Niall','Raiden','Rye','Shiloh','TJ']
     adults=['Justin','Lenard','LJ','Toby','Arlene','Alvin','Martin Wife','Martin','Nini','Val','Dulce','Nanay ni Juvy','Nanay ni My','Lolo Dad','Lola Mah','Khetz Wife','Khetz','Tomas','Bing','Joel','Josie','Joel','Banjo','Juvy','Andrew','Ness','Nyer','Di','Robert','Ednil','Raymund','Jeanet','Shayla','Karlo','Jerose','Ricky','Leah','Chris','Apol','Anthony','Myra','Alvin','Tere','Ron']
-    cloud(orig_kids)
+    #cloud(orig_kids)
     cloud(adults)
                             
 
