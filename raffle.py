@@ -7,7 +7,7 @@ from urllib.error import URLError
 from wordcloud import WordCloud, ImageColorGenerator
 import random
 import time
-
+from io import BytesIO
 
 st.title('🎰 RAFFLE 🧧')
 
