@@ -31,7 +31,7 @@ def cloud(kids):
     # show the figure
     #plt.figure(figsize=(10,5))
     #fig, axes = plt.subplots(1,2, gridspec_kw={'width_ratios': [5, 4]})
-    fig, ax = plt.subplots(figsize = (30, 15))
+    fig, ax = plt.subplots(figsize = (18, 9))
     ax.imshow(wc, interpolation="bilinear")
     # recolor wordcloud and show
     # we could also give color_func=image_colors directly in the constructor
@@ -40,11 +40,11 @@ def cloud(kids):
     #for ax in axes:
     ax.set_axis_off()
     placeholder=st.empty()
-    placeholder.pyplot(fig)
+    #placeholder.pyplot(fig)
     
-    #buf = BytesIO()
-    #fig.savefig(buf, format="png")
-    #placeholder.image(buf)
+    buf = BytesIO()
+    fig.savefig(buf, format="png")
+    placeholder.image(buf)
     
     
     if st.button("START"):
