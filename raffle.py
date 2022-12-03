@@ -41,7 +41,7 @@ def cloud(kids):
     
     
     if st.button("START"):
-        st.write(kids)
+        #st.write(kids)
         temp_kids=[x for x in kids]
         placeholder.empty()
         while len(temp_kids)>0:
