@@ -68,7 +68,10 @@ def cloud(kids):
             ax.set_axis_off()
             #placeholder=st.empty()
             placeholder.pyplot(fig)
-            time.sleep(1)
+            if len(temp_kids)>=20:
+                time.sleep(0.5)
+            else:
+                time.sleep(1)
             placeholder.empty()
             winner=temp_kids[0]
             temp_kids.pop()
