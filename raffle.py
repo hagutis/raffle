@@ -85,7 +85,7 @@ def cloud(kids):
 def main():
     #orig_kids=['Christoff','Cedrick','Chaskell','Jazmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
     #orig_kids=['Abbey','Aedan','Annika','Ardene','Arianne','Ava','Cedrick','Christoff','Edmund','Jasmine','Luigi','Nathan','Niall','Raiden','Rye','TJ']
-    adults=['LJ','Toby','Alvin','Martin Wife','Martin','Nini','Val','Dulce','Nanay ni My','Lolo Dad','Lola Mah','V','Khetz','Tomas','Bing','Josie','Juvy','Andrew','Ness','Nyer','Ednil','Raymund','Jeanet','Shayla','Karlo','Jerose','Ricky','Leah','Chris','Apol','Myra','Alvin R','Tere','Ron']
+    adults=['LJ','Toby','Alvin F','Nini','Val','Dulce','Nanay ni My','Lolo Dad','Lola Mah','V','Khetz','Tomas','Bing','Josie','Juvy','Andrew','Ness','Nyer','Ednil','Raymund','Jeanet','Shayla','Karlo','Jerose','Ricky','Leah','Chris','Apol','Myra','Alvin R','Tere','Ron']
     #cloud(orig_kids)
     cloud(adults)
                             
