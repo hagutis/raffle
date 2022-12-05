@@ -84,10 +84,10 @@ def cloud(kids):
 
 def main():
     #orig_kids=['Christoff','Cedrick','Chaskell','Jazmine','Nathan','Arianne','Rye','TJ','Annika','Amielle','Aaron','Aedan','Angel','Niall','Ardene','Jasen','Shiloh','Abbey','Ava','Rayden','Edmund','Matt','Luigi','Abby']
-    orig_kids=['Abbey','Aedan','Annika','Ardene','Arianne','Ava','Cedrick','Christoff','Edmund','Jasmine','Luigi','Nathan','Niall','Raiden','Rye','TJ']
-    #adults=['Justin','Lenard','LJ','Toby','Arlene','Alvin','Martin Wife','Martin','Nini','Val','Dulce','Nanay ni Juvy','Nanay ni My','Lolo Dad','Lola Mah','Khetz Wife','Khetz','Tomas','Bing','Joel','Josie','Joel','Banjo','Juvy','Andrew','Ness','Nyer','Di','Robert','Ednil','Raymund','Jeanet','Shayla','Karlo','Jerose','Ricky','Leah','Chris','Apol','Anthony','Myra','Alvin','Tere','Ron']
-    cloud(orig_kids)
-    #cloud(adults)
+    #orig_kids=['Abbey','Aedan','Annika','Ardene','Arianne','Ava','Cedrick','Christoff','Edmund','Jasmine','Luigi','Nathan','Niall','Raiden','Rye','TJ']
+    adults=['LJ','Toby','Alvin','Martin Wife','Martin','Nini','Val','Dulce','Nanay ni My','Lolo Dad','Lola Mah','V','Khetz','Tomas','Bing','Josie','Juvy','Andrew','Ness','Nyer','Ednil','Raymund','Jeanet','Shayla','Karlo','Jerose','Ricky','Leah','Chris','Apol','Anthony','Myra','Alvin R','Tere','Ron']
+    #cloud(orig_kids)
+    cloud(adults)
                             
 
 if __name__=="__main__":
